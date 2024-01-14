@@ -60,17 +60,21 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('💝 sᴜʙsᴄʀɪʙᴇ ᴍʏ ʏᴏᴜᴛᴜʙᴇ ᴄʜᴀɴɴᴇʟ', url='https://youtube.com/@Tech_VJ')
+            InlineKeyboardButton('•ʜᴇʟᴘ•', callback_data='help'),
+            InlineKeyboardButton('•ᴀʙᴏᴜᴛ•', callback_data='about')      
             ],[
-            InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/vj_bot_disscussion'),
-            InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/vj_botz')
-            ],[
-            InlineKeyboardButton('🤖 ᴄʀᴇᴀᴛᴇ ʏᴏᴜʀ ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ', callback_data='clone')
-            ],[
-            InlineKeyboardButton('▪ʜᴇʟᴘ▪', callback_data='help'),
-            InlineKeyboardButton('▪ᴀʙᴏᴜᴛ▪', callback_data='about')
+            InlineKeyboardButton('🎭sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/Galaxy_support123')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        m=await message.reply_text("📁")
+        await asyncio.sleep(1)
+        await m.delete()
+        m=await message.reply_text("Sᴛᴀʀᴛɪɴɢ...")
+        await asyncio.sleep(1)
+        await m.delete()
+        m=await message.reply_sticker("CAACAgQAAxkBAAIFm2WjxImFjRS_pPtTWrVguIRYSovIAAJfAgACqUJKA1WsR5LMc8L1HgQ") 
+        await asyncio.sleep(1)
+        await m.delete()
         me2 = (await client.get_me()).mention
         await message.reply_photo(
             photo=random.choice(PICS),
@@ -316,6 +320,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.delete()
     elif query.data == "about":
         buttons = [[
+            InlineKeyboardButton('📄Sᴏᴜʀᴄᴇ', callback_data='source'),
+            InlineKeyboardButton('👨🏻‍💻Oᴡɴᴇʀ', callback_data='owner')
+        ],[
             InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
             InlineKeyboardButton('🔒 Cʟᴏsᴇ', callback_data='close_data')
         ]]
@@ -338,15 +345,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('💝 sᴜʙsᴄʀɪʙᴇ ᴍʏ ʏᴏᴜᴛᴜʙᴇ ᴄʜᴀɴɴᴇʟ', url='https://youtube.com/@Tech_VJ')
+            InlineKeyboardButton('•ʜᴇʟᴘ•', callback_data='help'),
+            InlineKeyboardButton('•ᴀʙᴏᴜᴛ•', callback_data='about')      
             ],[
-            InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/vj_bot_disscussion'),
-            InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/vj_botz')
-            ],[
-            InlineKeyboardButton('🤖 ᴄʀᴇᴀᴛᴇ ʏᴏᴜʀ ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ', callback_data='clone')
-            ],[
-            InlineKeyboardButton('💁‍♀️ ʜᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('😊 ᴀʙᴏᴜᴛ', callback_data='about')
+            InlineKeyboardButton('🎭sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/Galaxy_support123')
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -368,7 +370,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "clone":
         buttons = [[
-            InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
+            InlineKeyboardButton('⇐Bᴀᴄᴋ', callback_data='help'),
             InlineKeyboardButton('🔒 Cʟᴏsᴇ', callback_data='close_data')
         ]]
         await client.edit_message_media(
@@ -385,7 +387,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "shortlink":
         buttons = [[
-            InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
+            InlineKeyboardButton('⇐Bᴀᴄᴋ', callback_data='start'),
             InlineKeyboardButton('🔒 Cʟᴏsᴇ', callback_data='close_data')
         ]]
         await client.edit_message_media(
@@ -402,7 +404,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "filestore":
         buttons = [[
-            InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
+            InlineKeyboardButton('⇐Bᴀᴄᴋ', callback_data='start'),
             InlineKeyboardButton('🔒 Cʟᴏsᴇ', callback_data='close_data')
         ]]
         await client.edit_message_media(
@@ -417,6 +419,39 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )  
 
+    elif query.data == "owner":
+        buttons = [[
+            InlineKeyboardButton('⇐Bᴀᴄᴋ', callback_data='about'),
+            InlineKeyboardButton('🔒 Cʟᴏsᴇ', callback_data='close_data')
+        ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.OWNER_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+
+    elif query.data == "source":
+        buttons = [[
+            InlineKeyboardButton('⇐Bᴀᴄᴋ', callback_data='about'),
+            InlineKeyboardButton('🔒 Cʟᴏsᴇ', callback_data='close_data')
+        ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.SOURCE_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
 
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
@@ -424,11 +459,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('short link', callback_data='shortlink'),
-            InlineKeyboardButton('file store', callback_data='filestore')
+            InlineKeyboardButton('Sʜᴏʀᴛʟɪɴᴋ', callback_data='shortlink'),
+            InlineKeyboardButton('Fɪʟᴇ sᴛᴏʀᴇ', callback_data='filestore')
         ],[
-            InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('🔒 Cʟᴏsᴇ', callback_data='close_data')
+            InlineKeyboardButton('Cʀᴇᴀᴛᴇ ʏᴏᴜʀ ᴄʟᴏɴᴇ ʙᴏᴛ', callback_data='clone')
+        ],[
+            InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
