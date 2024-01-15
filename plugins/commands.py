@@ -60,10 +60,13 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('•ʜᴇʟᴘ•', callback_data='help'),
-            InlineKeyboardButton('•ᴀʙᴏᴜᴛ•', callback_data='about')      
-            ],[
-            InlineKeyboardButton('🎭sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/Galaxy_support123')
+            InlineKeyboardButton('🎭Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url='https://t.me/Galaxy_support123'),
+            InlineKeyboardButton('🍀Sᴜᴘᴘᴏʀᴛ Cʜᴀɴɴᴇʟ', url='https://t.me/Galaxy_Bots1') 
+        ],[
+            InlineKeyboardButton('⚠️ʜᴇʟᴘ', callback_data='help'),
+            InlineKeyboardButton('🔰ᴀʙᴏᴜᴛ', callback_data='about')      
+        ],[
+            InlineKeyboardButton('❗Dɪꜱᴄʟᴀɪᴍᴇʀ', callback_data='disclaimer')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         m=await message.reply_text("📁")
@@ -332,6 +335,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text="■ ▣ ▣"
+        )
+        await query.message.edit_text(
+            text="■ ■ ▣"
+        )
+        await query.message.edit_text(
+            text="■ ■ ■"
+        )
         me2 = (await client.get_me()).mention
         await query.message.edit_text(
             text=script.ABOUT_TXT.format(me2),
@@ -345,13 +357,25 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('•ʜᴇʟᴘ•', callback_data='help'),
-            InlineKeyboardButton('•ᴀʙᴏᴜᴛ•', callback_data='about')      
-            ],[
-            InlineKeyboardButton('🎭sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/Galaxy_support123')
+            InlineKeyboardButton('🎭Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url='https://t.me/Galaxy_support123'),
+            InlineKeyboardButton('🍀Sᴜᴘᴘᴏʀᴛ Cʜᴀɴɴᴇʟ', url='https://t.me/Galaxy_Bots1') 
+        ],[
+            InlineKeyboardButton('⚠️ʜᴇʟᴘ', callback_data='help'),
+            InlineKeyboardButton('🔰ᴀʙᴏᴜᴛ', callback_data='about')      
+        ],[
+            InlineKeyboardButton('❗Dɪꜱᴄʟᴀɪᴍᴇʀ', callback_data='disclaimer')
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text="■ ▣ ▣"
+        )
+        await query.message.edit_text(
+            text="■ ■ ▣"
+        )
+        await query.message.edit_text(
+            text="■ ■ ■"
+        )
         await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 
@@ -380,6 +404,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
+            text="■ ▣ ▣"
+        )
+        await query.message.edit_text(
+            text="■ ■ ▣"
+        )
+        await query.message.edit_text(
+            text="■ ■ ■"
+        )
+        await query.message.edit_text(
             text=script.CLONE_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -396,6 +429,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text="■ ▣ ▣"
+        )
+        await query.message.edit_text(
+            text="■ ■ ▣"
+        )
+        await query.message.edit_text(
+            text="■ ■ ■"
+        )
         await query.message.edit_text(
             text=script.SHORTLINK_TXT,
             reply_markup=reply_markup,
@@ -414,6 +456,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
+            text="■ ▣ ▣"
+        )
+        await query.message.edit_text(
+            text="■ ■ ▣"
+        )
+        await query.message.edit_text(
+            text="■ ■ ■"
+        )
+        await query.message.edit_text(
             text=script.FILESTORE_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -430,6 +481,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text="■ ▣ ▣"
+        )
+        await query.message.edit_text(
+            text="■ ■ ▣"
+        )
+        await query.message.edit_text(
+            text="■ ■ ■"
+        )
         await query.message.edit_text(
             text=script.OWNER_TXT,
             reply_markup=reply_markup,
@@ -448,7 +508,42 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
+            text="■ ▣ ▣"
+        )
+        await query.message.edit_text(
+            text="■ ■ ▣"
+        )
+        await query.message.edit_text(
+            text="■ ■ ■"
+        )
+        await query.message.edit_text(
             text=script.SOURCE_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+
+    elif query.data == "disclaimer":
+        buttons = [[
+            InlineKeyboardButton('⇐Bᴀᴄᴋ', callback_data='start'),
+            InlineKeyboardButton('🔒 Cʟᴏsᴇ', callback_data='close_data')
+        ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text="■ ▣ ▣"
+        )
+        await query.message.edit_text(
+            text="■ ■ ▣"
+        )
+        await query.message.edit_text(
+            text="■ ■ ■"
+        )
+        await query.message.edit_text(
+            text=script.DISCLAIMER_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -472,6 +567,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text="■ ▣ ▣"
+        )
+        await query.message.edit_text(
+            text="■ ■ ▣"
+        )
+        await query.message.edit_text(
+            text="■ ■ ■"
+        )
         await query.message.edit_text(
             text=script.HELP_TXT,
             reply_markup=reply_markup,
