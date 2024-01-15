@@ -99,7 +99,11 @@ async def start():
     bind_address = "0.0.0.0"
     await web.TCPSite(app, bind_address, Var.PORT).start()
     await restart_bots()
-    print("Bot Started Powered By @VJ_Botz")
+    print("   ______ _____   __  ______  ___  ______________  _________  _________ __
+  / __/ //_/ _ | /  |/  / _ \/ _ \/ __/ __/_  __/ / __/  _/ |/ / ___/ // /
+ / _// ,< / __ |/ /|_/ / ___/ , _/ _// _/  / /   _\ \_/ //    / (_ / _  / 
+/___/_/|_/_/ |_/_/  /_/_/  /_/|_/___/___/ /_/   /___/___/_/|_/\___/_//_/  
+                                                                          ")
     await idle()
 
 # Don't Remove Credit Tg - @VJ_Botz
