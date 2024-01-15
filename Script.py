@@ -37,9 +37,7 @@ Cᴜʀʀᴇɴᴛ Sʜᴏʀᴛᴇɴᴇʀ API:</b> `{shortener_api}`"""
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
 # Ask Doubt on telegram @KingVJ01
 
-    ABOUT_TXT = """<b>ʜɪ ɪ ᴀᴍ ᴘᴇʀᴍᴀɴᴇɴᴛ ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ ᴡɪᴛʜ ᴄʟᴏɴᴇ ғᴇᴀᴛᴜʀᴇ + ᴄᴜsᴛᴏᴍ ᴜʀʟ sʜᴏʀᴛɴᴇʀ ɪᴛ ᴍᴇᴀɴs ᴀɴʏ ᴜsᴇʀ ᴄᴀɴ sᴇᴛ ʜɪs ᴜʀʟ sʜᴏʀᴛɴᴇʀ ᴀɴᴅ + ᴀᴜᴛᴏ ᴅᴇʟᴇᴛᴇ.
-
-◁ ᴍʏ ɴᴀᴍᴇ: {}
+    ABOUT_TXT = """<b>◁ ᴍʏ ɴᴀᴍᴇ: {}
 ◁ ᴅᴇᴠᴇʟᴏᴘᴇʀ: <a href=https://t.me/EK4MPREETSINGH>Eᴋᴀᴍᴘʀᴇᴇᴛ Sɪɴɢʜ</a>
 ◁ ʟᴀɴɢᴜᴀɢᴇ: <a href=https://www.python.org>Pʏᴛʜᴏɴ 𝟹</a>
 ◁ ʟɪʙʀᴀʀʏ: <a href=https://docs.pyrogram.org>Pʏʀᴏɢʀᴀᴍ</a>
@@ -59,9 +57,7 @@ Iғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ʙᴜʏ ᴍʏ ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ʏ�
 
     Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ: <a href="https://t.me/EK4MPREETSINGH">Eᴋᴀᴍᴘʀᴇᴇᴛ Sɪɴɢʜ</a>"""
 
-    CABOUT_TXT = """<b>ʜɪ ɪ ᴀᴍ ᴘᴇʀᴍᴀɴᴇɴᴛ ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ ᴡɪᴛʜ ᴄʟᴏɴᴇ ғᴇᴀᴛᴜʀᴇ + ᴄᴜsᴛᴏᴍ ᴜʀʟ sʜᴏʀᴛɴᴇʀ ɪᴛ ᴍᴇᴀɴs ᴀɴʏ ᴜsᴇʀ ᴄᴀɴ sᴇᴛ ʜɪs ᴜʀʟ sʜᴏʀᴛɴᴇʀ + ᴀᴜᴛᴏ ᴅᴇʟᴇᴛᴇ.
-
-◁ ᴍʏ ɴᴀᴍᴇ: {}
+    CABOUT_TXT = """<b>◁ ᴍʏ ɴᴀᴍᴇ: {}
 ◁ ᴘᴀʀᴇɴᴛ ʙᴏᴛ : <a href=https://t.me/Filestore_Galaxy_bot>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>
 ◁ ʟᴀɴɢᴜᴀɢᴇ: <a href=https://www.python.org>Pʏᴛʜᴏɴ 𝟹</a>
 ◁ ʟɪʙʀᴀʀʏ: <a href=https://docs.pyrogram.org>Pʏʀᴏɢʀᴀᴍ</a>
