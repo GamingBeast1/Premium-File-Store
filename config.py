@@ -76,7 +76,7 @@ PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 # File Stream Config
 class Var(object):
     MULTI_CLIENT = False
-    name = str(getenv('name', 'galaxyfilestorebot'))
+    name = str(getenv('name', 'filestorebot-moviesgalaxy'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
     BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1002107444913'))
@@ -92,11 +92,11 @@ class Var(object):
     else:
         ON_HEROKU = False
     FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
-    HAS_SSL=bool(getenv('HAS_SSL',False))
+    HAS_SSL=bool(getenv('HAS_SSL',True))
     if HAS_SSL:
         URL = "https://filestorebot-moviesgalaxy.koyeb.app/"
     else:
-        URL = "https://filestorebot-moviesgalaxy.koyeb.app/"
+        URL = "https://filestorebot-moviesgalaxy.koyeb.app//"
 
 
 
