@@ -14,9 +14,7 @@ class script(object):
     CAPTION = """<b>▫️ ғɪʟᴇɴᴀᴍᴇ : {file_name}
 
 ▫️ sɪᴢᴇ : {file_size}
-
-[Mᴏᴠɪᴇꜱ Gʀᴏᴜᴘ](https://t.me/Moviesgalaxy120)
-[Oᴡɴᴇʀ](https://t.me/ek4mpreetsingh)</b>""" 
+</b>""" 
 
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
@@ -42,7 +40,7 @@ Cᴜʀʀᴇɴᴛ Sʜᴏʀᴛᴇɴᴇʀ API:</b> `{shortener_api}`"""
 ◁ ʟᴀɴɢᴜᴀɢᴇ: <a href=https://www.python.org>Pʏᴛʜᴏɴ 𝟹</a>
 ◁ ʟɪʙʀᴀʀʏ: <a href=https://docs.pyrogram.org>Pʏʀᴏɢʀᴀᴍ</a>
 ◁ ᴅᴀᴛᴀʙᴀꜱᴇ : <a href=https://docs.mongodb.com>ᴍᴏɴɢᴏDB</a>
-◁ Sᴇʀᴠᴇʀ : <a href="https://cloud.google.com">ᴠᴘꜱ</a>
+◁ Sᴇʀᴠᴇʀ : <a href="https://render.com">ʀᴇɴᴅᴇʀ</a>
 ◁ ʙᴜɪʟᴅ ꜱᴛᴀᴛᴜꜱ : ᴠ.2.7.1 [ꜱᴛᴀʙʟᴇ]</b>
 """
 
