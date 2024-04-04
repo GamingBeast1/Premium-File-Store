@@ -61,7 +61,7 @@ async def start(client, message):
     if len(message.command) != 2:
         buttons = [[
             InlineKeyboardButton('🎭Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url='https://t.me/Galaxy_support123'),
-            InlineKeyboardButton('🍀Sᴜᴘᴘᴏʀᴛ Cʜᴀɴɴᴇʟ', url='https://t.me/Galaxy_Bots1') 
+            InlineKeyboardButton('🍀Mᴏᴠɪᴇs Cʜᴀɴɴᴇʟ', url='https://t.me/+27pVj5AfoG41NjM1') 
         ],[
             InlineKeyboardButton('⚠️ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('🔰ᴀʙᴏᴜᴛ', callback_data='about')      
